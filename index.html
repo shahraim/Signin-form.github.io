@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Form</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-box">
+        <div class="signUpParent">
+          <h1 id="title">Sign Up</h1>
+          <form id="signUpFormSubmit">
+            <div class="input-group">
+              <div class="input-field" id="nameField">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  id="name"
+                  minlength="3"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="signUpEmail"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="signUpPassword"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+            <p class="display"></p>
+            <div class="btn-field">
+              <button type="button" id="signinbtn">Sign in</button>
+              <button type="submit" id="signupbtn">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <div class="signInParent">
+          <h1 id="title">Sign In</h1>
+          <form id="signInFormSubmit">
+            <div class="input-group">
+              <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  id="signInEmail"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="signInPassword"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <p><a href="#">Forgot Password</a></p>
+            </div>
+            <p class="display"></p>
+            <div class="btn-field">
+              <button type="button" id="loginSignUpButton">Sign up</button>
+              <button type="submit" id="signinbtn">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="welcomeParent">
+          <h1 id="welcomeTitle">Welcome</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
